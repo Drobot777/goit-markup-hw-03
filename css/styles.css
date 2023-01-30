@@ -20,6 +20,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -39,10 +44,6 @@ ul {
 
 /*--------- header ----------------*/
 .header {
-  width: 1440px;
-  height: 72px;
-  margin-left: auto;
-  margin-right: auto;
   border-bottom: 1px solid #e7e9fc;
 }
 .main-container {
@@ -62,7 +63,6 @@ ul {
   margin-left: 0;
 }
 .navigation .item {
-  display: block;
   margin-left: 40px;
 }
 .navigation .link {
@@ -84,7 +84,7 @@ ul {
   color: #404bbf;
 }
 .logo {
-  display: block;
+  display: inline-block;
   margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -125,13 +125,8 @@ ul {
 
 /* -------------hero--------------- */
 .hero {
-  width: 1440px;
-  padding-bottom: 180px;
-
+  padding-bottom: 188px;
   padding-top: 188px;
-
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--secondary-color);
 }
 .hero .title {
@@ -171,15 +166,11 @@ ul {
 .hero-btn:focus {
   background: #404bbf;
   cursor: pointer;
-  letter-spacing: 0.02em;
 }
 
 /*------------ Adventages------------------ */
 .advantages {
-  width: 1440px;
   padding-top: 120px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .visually-hidden {
   position: absolute;
@@ -198,7 +189,7 @@ ul {
   display: flex;
 }
 .advantages-list .item {
-  width: 264px;
+  width: calc((100%-48px) / 3);
   margin-left: 24px;
 }
 .advantages-list > .item:first-child {
@@ -218,9 +209,6 @@ ul {
 
 /*---------------Work---------- */
 .works {
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
@@ -248,11 +236,8 @@ ul {
 
 /* ----------------Team------------- */
 .team {
-  width: 1440px;
   padding-top: 120px;
   padding-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   background-color: #f4f4fd;
 }
@@ -269,7 +254,6 @@ ul {
   margin-left: 0;
 }
 .team .text {
-  margin-bottom: 32px;
   letter-spacing: 0.02em;
 }
 .team .item {
@@ -277,20 +261,18 @@ ul {
 }
 .subtitle {
   margin-bottom: 8px;
-  margin-top: 32px;
+}
+.content-wrapper {
+  padding: 32px 16px;
 }
 
 /* --------footer ----------*/
 .footer {
-  width: 1440px;
   padding-top: 100px;
   padding-bottom: 100px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--secondary-color);
 }
 .footer .logo {
-  width: 115px;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 16px;
@@ -316,11 +298,8 @@ ul {
 
 /* ---------------portfolio------------------- */
 .portfolio {
-  width: 1440px;
   padding-bottom: 120px;
   padding-top: 96px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .portfolio-list {
   display: flex;
@@ -335,10 +314,7 @@ ul {
 }
 .portfolio .btn {
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid #e7e9fc;
 
@@ -355,13 +331,11 @@ ul {
   background: #404bbf;
   color: var(--primary-bg-color);
   cursor: pointer;
+  border-color: transparent;
 }
 .portfolio-item {
   display: flex;
   flex-wrap: wrap;
-
-  margin-left: auto;
-  margin-right: auto;
 }
 .portfolio-item .item {
   margin-right: 24px;
@@ -390,9 +364,4 @@ ul {
   margin-bottom: 32px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-}
-.portfolio .images {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
