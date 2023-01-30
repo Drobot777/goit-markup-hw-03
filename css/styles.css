@@ -376,6 +376,7 @@ ul {
 }
 
 .portfolio .title {
+  padding-left: 16px;
   margin-top: 32px;
   margin-bottom: 8px;
   font-weight: 500;
@@ -385,6 +386,7 @@ ul {
   letter-spacing: 0.02em;
 }
 .portfolio .text {
+  padding-left: 16px;
   margin-bottom: 32px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
