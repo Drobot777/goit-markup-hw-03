@@ -147,14 +147,12 @@ img {
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 196px;
-  height: 56px;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 32px;
   padding-right: 32px;
   border-radius: 4px;
-  border-color: transparent;
+  border: none;
   color: var(--primary-bg-color);
   background-color: var(--secondary-bg-color);
   font-family: inherit;
@@ -190,7 +188,7 @@ img {
   display: flex;
 }
 .advantages-list .item {
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 72px) / 4);
   margin-left: 24px;
 }
 .advantages-list > .item:first-child {
@@ -221,6 +219,7 @@ img {
   display: flex;
 }
 .works-list .item {
+  width: calc((100% - 48px) / 3);
   margin-left: 24px;
 }
 .works-list > .item:first-child {
@@ -249,6 +248,7 @@ img {
   display: flex;
 }
 .team-list .item {
+  width: calc((100% - 72px) / 4);
   margin-left: 24px;
 }
 .team-list > .item:first-child {
@@ -318,7 +318,7 @@ img {
   padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid var(--bord-color);
-
+  cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -331,7 +331,6 @@ img {
 .portfolio .btn:focus {
   background: #404bbf;
   color: var(--primary-bg-color);
-  cursor: pointer;
   border-color: transparent;
 }
 .portfolio-item {
@@ -339,6 +338,7 @@ img {
   flex-wrap: wrap;
 }
 .portfolio-item .item {
+  width: calc((100% - 48px) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
 }
